@@ -1,0 +1,20 @@
+{
+  "name": "backend-meli",
+  "version": "1.0.0",
+  "description": "Server encargado de conectar con los servicios de mercadolibre y generar los endpoints del frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Federico German Knispel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
