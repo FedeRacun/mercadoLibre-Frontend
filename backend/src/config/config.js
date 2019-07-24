@@ -1,5 +1,3 @@
-console.log('Inicio: configuracion.js')
-
 //  Aca cargaria las variables de entorno
 
 // por si mas adelante quisiera subirlo a la nube
