@@ -4,7 +4,7 @@ let searchModel = (data) => {
             'name': 'Federico',
             'lastname': 'Knispel',
         },
-        'categories': data.filters,
+        'categories': data.available_filters,
         //utilizo un .map() para iterar entre todos los resultados
         'items': data.results.map((item) => {
             return {
