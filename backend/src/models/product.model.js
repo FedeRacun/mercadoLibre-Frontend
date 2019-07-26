@@ -1,4 +1,4 @@
-let obj = async (data,detail) => {
+let productModel = async (data,detail) => {
     return {
         'author': {
             'name': 'Federico',
@@ -22,4 +22,4 @@ let obj = async (data,detail) => {
 }
 
 
-module.exports = obj;
+module.exports = productModel;

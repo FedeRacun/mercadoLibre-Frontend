@@ -1,4 +1,4 @@
-let obj = (data) => {
+let searchModel = (data) => {
     return {
         'author': {
             'name': 'Federico',
@@ -23,4 +23,4 @@ let obj = (data) => {
     }
 }
 
-module.exports = obj;
+module.exports = searchModel;
