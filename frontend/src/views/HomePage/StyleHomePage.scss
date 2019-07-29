@@ -1,0 +1,17 @@
+@import '../../index.scss';
+.searchBar{
+    position: relative;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: .5rem 1rem;
+    background-color: $amarillo;
+}
+.formSearch{
+  display: inline-flex;
+  width: 60%;
+  justify-content: center;
+}

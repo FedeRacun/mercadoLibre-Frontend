@@ -1,20 +1,27 @@
-import React/* ,{useState,useEffect}*/ from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import SearchBar from './views/header/SearchBar';
-import ResultList from './views/body//results/ResultList';
-import ProductDetail from './views/body/product/ProductDetail';
+import React from 'react';
+import {  BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+//aca tengo que importar todas mis views
+import HomePage from './views/HomePage/HomePage';
+import SearchPage from './views/SearchPage/SearchPage';
+import ProductPage from './views/ProductPage/ProductPage';
+import ErrorPage from './views/ErrorPage/ErrorPage';
+
+//borrar luego
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//hago el app un stateless con el return implicito
+const App = ()=>(
 
-function App() {
-  return (
-    <Router>
-      <SearchBar/>
-      <Route path="/items/:id" exact component={ProductDetail}/>
-      <Route path="/items" search="?search=:query" exact component={ResultList}/>
-    </Router>
+  <Router>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/items" component={SearchPage} />
+      <Route exact path="/items/:id" component={ProductPage} />
+     <Route component={ErrorPage} />
+    </Switch>
+  </Router>
+
+
   );
-
-}
 
 export default App;

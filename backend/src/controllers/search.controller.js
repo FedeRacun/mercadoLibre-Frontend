@@ -13,12 +13,16 @@ searchCtrl.getSearch =
         //aplico los parametros obtenidos a la url de mercado libre
         let baseURL = `https://api.mercadolibre.com/sites/MLA/search?q=${query}`;
         //espero a la respuesta de la api y los guardo en un json llamado data
-        let response = await fetch(baseURL);
-        let data = await response.json();
-        res.json(
-            //llamo a la funcion searchModel que se encarga de modelar toda la data
-            await searchModel(data)
-        )
+        try {
+            let response = await fetch(baseURL);
+            let data = await response.json();
+            res.json(
+                //llamo a la funcion searchModel que se encarga de modelar toda la data
+                await searchModel(data)
+            )
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 

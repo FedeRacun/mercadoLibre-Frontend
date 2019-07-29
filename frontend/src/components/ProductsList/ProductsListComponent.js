@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 export default class ResultList extends Component {
+    state(){}
+
     render() {
         return (
-            <div>
-                ResultList
-            </div>
+            <h1>ResultList</h1>
         )
     }
 }
