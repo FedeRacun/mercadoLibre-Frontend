@@ -1,10 +1,10 @@
 import React from 'react'
 
-
-import SearchBar from '../../components/SearchBar/SearchBarComponent';
-
-const ProductPage = (props) =>(
-    <SearchBar  history={props.history}/>
+const ProductPage = ({match}) =>{
+    console.log(match.url)
+    return(
+    <h1>ProductPage</h1>
 );
+    };
 
 export default ProductPage

@@ -1,26 +1,19 @@
 import React, {Component} from 'react'
 
-import SearchBar from '../../components/SearchBar/SearchBarComponent';
-
 
 class SearchPage extends Component{
-    state ={
+    constructor(props) {
+        super(props);
+    this.state ={
+    };
+}
 
-    }
-
-    getResult = result =>{
-        console.log('Search Pag: ',result);
-    }
-
+    
 
     render(){
         return(
         <div>
-            <SearchBar
-            getResult={this.getResult}
-            history={this.props.history}
-            />
-            <h1>SearchPage</h1>
+            <h1>SearchPage {console.log('React es Asombroso: ',this.props.sendResults)}</h1>
         </div>
 
         )

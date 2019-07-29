@@ -22,9 +22,9 @@ export default class SearchBar extends Component {
           const respuesta = await fetch(baseUrl);
           const resultado = await respuesta.json();
           await this.setState({resultado})
-          this.props.getResult(this.state.resultado);
           this.props.history.push(`/items?search=${this.state.value}`);
-      }
+        this.props.getResults(this.state.resultado);
+        }
 
       render() {
         return (

@@ -8,7 +8,8 @@ class HomePage extends Component{
     state ={
     }
     getResult = result =>{
-        console.log('Home Page',result);
+        this.setState({result})
+        console.log('HOME: ',result)
     }
 
     render(){
