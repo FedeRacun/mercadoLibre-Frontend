@@ -33,7 +33,6 @@ export class Products extends Component {
                 props = {this.props.props}
                 data = {this.state.data}
                 categories={this.state.categories}
-                search={this.state.search}
                 />
             </Fragment>
         )

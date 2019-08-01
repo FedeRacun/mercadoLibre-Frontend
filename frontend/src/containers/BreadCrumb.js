@@ -1,10 +1,10 @@
 import React from 'react'
 import BreadCrumbComponent from '../components/BreadCrumbComponent';
 
-const BreadCrumb = ()=> {
-
+const BreadCrumb = ({categories})=> {
         return (
-                <BreadCrumbComponent/>
+                <BreadCrumbComponent
+                categories={categories}/>
         )
 
 }

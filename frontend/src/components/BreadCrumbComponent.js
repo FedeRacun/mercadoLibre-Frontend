@@ -1,11 +1,12 @@
 import React from 'react'
 
-const BreadCrumbComponents = ()=>(
+const BreadCrumbComponents = ({categories})=>{
+
+    
+    return(
         <ul>
-            <li>test > </li>
-            <li>test > </li>
-            <li>test > </li>
-            <li>test > </li>
+            <li>{categories}</li>
         </ul>
     )
-export default BreadCrumbComponents
+}
+    export default BreadCrumbComponents

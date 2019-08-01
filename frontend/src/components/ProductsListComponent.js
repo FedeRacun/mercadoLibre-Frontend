@@ -3,7 +3,7 @@ import Product from './ProductComponent';
 import BreadCrumbContainer from '../containers/BreadCrumb';
 
 
-const ProductsListComponents = ({data,props,categories,search}) =>{
+const ProductsListComponents = ({data,props,categories}) =>{
 
 
     const onRedirect = (id) =>{
@@ -12,7 +12,10 @@ const ProductsListComponents = ({data,props,categories,search}) =>{
     
     return(
         <Fragment>
-            <BreadCrumbContainer />
+
+            <BreadCrumbContainer
+            categories={categories}/>
+        
             {data.map((datos)=>(
                 <Product
                 key={datos.id}
