@@ -1,4 +1,4 @@
-let productModel = async (data,detail) => {
+let productModel = (data,detail) => {
     return {
         'author': {
             'name': 'Federico',

@@ -1,6 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
+import {render}  from 'react-dom';
+import {BrowserRouter as Router} from "react-router-dom";
 import App from './App';
+import './index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+render(
+    <Router>
+    <div className="breadCrumb">
+        <App />
+    </div>
+    </Router>,
+    document.getElementById('root')
+);

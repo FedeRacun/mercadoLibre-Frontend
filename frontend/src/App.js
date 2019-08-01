@@ -1,33 +1,28 @@
-import React, { Component } from 'react'
-import {  BrowserRouter as Router, Route} from 'react-router-dom'
-//aca tengo que importar todas mis views
-import SearchBarComponent from './components/SearchBar/SearchBarComponent'
-//import HomePage from './views/HomePage/HomePage';
-import SearchPage from './views/SearchPage/SearchPage';
-import ProductPage from './views/ProductPage/ProductPage';
+import React, {Component,Fragment} from 'react';
+import {Switch, Route, withRouter} from "react-router-dom";
+import routes from "./routes";
+import SearchBar from './containers/SearchBar';
 
-//borrar luego
-import 'bootstrap/dist/css/bootstrap.min.css';
+export class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+    }
+};
 
-//hago el app un stateless con el return implicito
-
-
-export default class App extends Component {
-
-  state = {
-    data : {}
-}
-
-  getResults = data =>{
-    this.setState({data})
-  }
   render() {
+    const Header = withRouter(SearchBar)
     return (
-      <Router>
-      <Route path="/" render ={(props)=><SearchBarComponent {...props} getResults = {this.getResults} />}/>
-      <Route exact path="/items" render = { () => <SearchPage sendResults = {this.state.data} />}/>
-      <Route exact path="/items/:id" component={ProductPage} />
-  </Router>
+      <Fragment>
+        <Header/>
+          <div className="container piola">
+            <Switch>
+              {routes.map((route, i) => <Route key={i} {...route} />)}
+            </Switch>
+          </div>
+    </Fragment>
     )
   }
 }
+
+export default App

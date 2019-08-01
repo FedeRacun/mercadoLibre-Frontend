@@ -4,24 +4,19 @@ $gris: #999999;
 $gris_claro: #EEEEEE;
 $azul: #3483FA;
 
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
-
+code{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
 
 .searchBar{
   position: relative;
-
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -31,7 +26,26 @@ code {
   background-color: $amarillo;
 }
 .formSearch{
-display: inline-flex;
-width: 60%;
-justify-content: center;
+  display: inline-flex;
+  width: 60%;
+  justify-content: center;
+}
+
+.breadCrumb{
+  background-color: $gris_claro;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  text-decoration: none;
+}
+
+.piola{
+  background-color: white;
 }

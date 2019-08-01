@@ -6,7 +6,7 @@ let searchModel = (data) => {
         },
         //la API de MeLi devuelve de > a < el numero de resultados por categoria en un Array,
         // por lo que el indice 0 es la categoria con mas productos de la busqueda
-        'categories': data.filters.map(category => (category.values[0]))[0].name,
+        'categories': data.available_filters.map(category => (category.values)[0]),
         'items': data.results.map( item => ({
                 'id': item.id,
                 'title': item.title,

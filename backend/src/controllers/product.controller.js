@@ -11,13 +11,17 @@ productCtrl.getProduct =
         //aplico los parametros obtenidos a la url de mercado libre
         let baseURL = `https://api.mercadolibre.com/items/${id}`;
         //espero a la respuesta de la api y los guardo en un json
-        let response = await fetch(baseURL);
-        let data = await response.json();
+        try {
+            let response = await fetch(baseURL);
+            let data = await response.json();
+            let detail = getDetail(id)
+            res.json(
+                productModel(data,detail)
+            )
+        } catch (error) {
+            console.log(error);
+        }
 
-        let detail = await getDetail(id)
-        res.json(
-            await productModel(data,detail)
-        )
 
     };
 
