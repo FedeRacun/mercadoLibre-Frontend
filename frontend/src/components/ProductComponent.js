@@ -7,15 +7,26 @@ const ProductComponent = (datos) => {
 
     return (
         <Fragment>
+
             <p>{title}</p>
+
+
             <div className="row">
+
                 <img src={picture} alt={id} width="128" height="128"></img>
+
                 <p>{price.amount}</p><small className="ml-1">{price.decimals}</small>
+
                 <button
-                className="btn btn-success m-auto"
-                >Comprar</button>
+                    className="btn btn-success m-auto"
+                    onClick={()=>datos.onRedirect(id)}
+                    >Comprar
+                </button>
+
             </div>
+
             <hr/>
+
         </Fragment>
     )
 }

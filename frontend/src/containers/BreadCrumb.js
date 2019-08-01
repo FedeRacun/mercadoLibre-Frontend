@@ -1,12 +1,10 @@
-import React, {Fragment } from 'react'
-import Crumb from '../components/BreadCrumbComponent';
+import React from 'react'
+import BreadCrumbComponent from '../components/BreadCrumbComponent';
 
 const BreadCrumb = ()=> {
 
         return (
-            <Fragment>
-                <Crumb/>
-            </Fragment>
+                <BreadCrumbComponent/>
         )
 
 }

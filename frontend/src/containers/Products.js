@@ -22,17 +22,18 @@ export class Products extends Component {
         const data = await respuesta.json();
         this.setState({
             data: data.items,
-            categories : data.categories
-        })
+            categories : data.categories,
+            search : value
+        });
     }
     render() {
-        //<button className="btn btn-primary" onClick={()=>console.log(props.history.push(`/items/${valor}`) )}> VER PRODUCTOVICH</button>
         return (
             <Fragment>
                 <ProductsListComponent
                 props = {this.props.props}
                 data = {this.state.data}
                 categories={this.state.categories}
+                search={this.state.search}
                 />
             </Fragment>
         )

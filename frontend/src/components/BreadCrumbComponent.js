@@ -1,11 +1,11 @@
 import React from 'react'
 
-function BreadCrumbComponents() {
-    return (
-        <ul className="breadCrumb">
-            <li>test</li>
+const BreadCrumbComponents = ()=>(
+        <ul>
+            <li>test > </li>
+            <li>test > </li>
+            <li>test > </li>
+            <li>test > </li>
         </ul>
     )
-}
-
 export default BreadCrumbComponents
