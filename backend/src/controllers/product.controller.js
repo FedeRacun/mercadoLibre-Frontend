@@ -14,7 +14,7 @@ productCtrl.getProduct =
         try {
             let response = await fetch(baseURL);
             let data = await response.json();
-            let detail = getDetail(id)
+            let detail =await getDetail(id)
             res.json(
                 productModel(data,detail)
             )

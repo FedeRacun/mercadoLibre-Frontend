@@ -18,10 +18,10 @@ searchCtrl.getSearch =
             let data = await response.json();
             res.json(
                 //llamo a la funcion searchModel que se encarga de modelar toda la data
-                searchModel(data)
+                await searchModel(data)
             )
         } catch (error) {
-            console.log(error)
+            console.log('Ocurrio un error: ',error)
         }
     }
 

@@ -1,10 +1,9 @@
 import React from 'react'
+import Details from '../containers/Detail' 
 
-function Detail() {
+function Detail(props) {
     return (
-        <h1>
-            Detail VIEW
-        </h1>
+        <Details props = {props}/>
     )
 }
 

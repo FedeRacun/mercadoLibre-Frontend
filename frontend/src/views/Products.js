@@ -8,18 +8,6 @@ export default class Product extends Component {
         this.state = {};
     };
 
-
-
-    /*
-    async componentWillMount(){
-        const baseUrl = `http://localhost:4000/api/items/q=:${this.state.value}`
-        const respuesta = await fetch(baseUrl);
-        const resultado = await respuesta.json();
-        await this.setState({resultado})
-    }
-
-    */
-
    render() {
         return (
             <Products props ={this.props}/>
