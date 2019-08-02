@@ -16,7 +16,6 @@ export class Detail extends Component {
     }
 
     getDetail = async () =>{
-        debugger
         const param = this.props.props.location.pathname;
         let id = param.slice(7,param.length);
         const baseUrl = `http://localhost:4000/api/items/${id}`;
@@ -30,7 +29,6 @@ export class Detail extends Component {
     }
     
     render() {
-        debugger
     
         if(this.state.data){
             return (
