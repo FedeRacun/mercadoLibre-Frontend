@@ -1,4 +1,4 @@
-$amarillo : #14416A;        //FFE600;
+$amarillo : #FFE600;        //FFE600;
 $negro: #333333;
 $gris: #999999;
 $gris_claro: #EEEEEE;
@@ -28,7 +28,7 @@ code{
   justify-content: center;
   flex-direction: row;
   padding: .5rem 1rem;
-  background-color: $gris_claro;
+  background-color: $amarillo;
 }
 .formSearch{
   display: inline-flex;

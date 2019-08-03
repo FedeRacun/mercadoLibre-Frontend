@@ -17,10 +17,14 @@ export default class SearchBar extends Component {
     }
 
     onRedirect(){
-        if(this.state.search){
-        this.props.history.push(`/items?search=${this.state.search}`)
+        if(this.state.search === ""){
+            this.props.history.push(`/`);
+            window.location.reload();
+            return;
+        }
+        this.props.history.push(`/items?search=${this.state.search}`);
         window.location.reload();
-    } return;
+        return;
     }
 
     render() {
