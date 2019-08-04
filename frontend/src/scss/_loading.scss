@@ -1,0 +1,33 @@
+//Items Loading
+.loadingBox{
+    margin-top: 40px;
+.imgBox{
+    height: 180px;
+    width: 180px;
+    background-color: $backgroundColor;
+    margin-right: 16px;
+}
+
+.price{
+    margin-top: 15px;
+}
+.priceBox{
+    width: 49px;
+    background-color: $backgroundColor;
+}
+
+.tittleBox{
+    width: 500px;
+    height: 24px;
+    background-color: $backgroundColor;
+}
+
+hr {
+    border: solid 0.5px $backgroundColor;
+  }
+.space{
+    padding: 10px 0px;
+}
+
+
+}

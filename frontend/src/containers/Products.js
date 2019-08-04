@@ -1,6 +1,7 @@
-import React, {Component,Fragment} from 'react'
-import ProductsListComponent from '../components/ProductsListComponent'
-import NotFound from '../views/NotFoundPag'
+import React, {Component,Fragment} from 'react';
+import ProductsListComponent from '../components/ProductsListComponent';
+import LoadingProducts from '../views/LoadingProducts';
+import NotFound from '../views/NotFoundPag';
 
 export class Products extends Component {
     constructor(props) {
@@ -29,20 +30,23 @@ export class Products extends Component {
     }
     render() {
 
-        if(this.state.data === ''){
-            return <NotFound />
-        }if(this.state.data !== null){
-            return (
-                <Fragment>
-                <ProductsListComponent
-                props = {this.props.props}
-                data = {this.state.data}
-                categories={this.state.categories}
-                />
-            </Fragment>
-        )
-    }
-    return <p>Cargando...</p>
+//Esto eran 3 "if" pero quedaba horrible
+        switch (true) {
+            case this.state.data === '':
+                return  <NotFound />
+
+            case this.state.data !== null :
+                return <Fragment>
+                    <ProductsListComponent
+                    props = {this.props.props}
+                    data = {this.state.data}
+                    categories={this.state.categories}
+                    />
+                </Fragment>
+
+            default:
+                return <LoadingProducts />
+        }
     }
 }
 

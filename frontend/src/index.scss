@@ -6,15 +6,11 @@
 // Elementos
 @import './scss/searchbar';
 @import './scss/products';
+@import './scss/loading';
 
 html,body{
   height: 100%;
 }
-p{
-  margin: 0;
-  padding-top: 12px;
-}
-
 body{
   background-color: $backgroundColor !important;
   margin: 0;
@@ -33,4 +29,5 @@ code{
 
 .elements{
   background-color: $containerColor;
+  min-height: 900px;
 }

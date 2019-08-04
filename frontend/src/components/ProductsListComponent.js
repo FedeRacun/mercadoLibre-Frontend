@@ -5,8 +5,6 @@ import BreadCrumbContainer from '../containers/BreadCrumb';
 
 const ProductsListComponents = ({data,categories}) =>{
 
-
-
     return(
         <Fragment>
 

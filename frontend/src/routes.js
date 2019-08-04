@@ -11,13 +11,13 @@ const routes = [
     exact: true
   },
   {
+    path: "/items",
+    component: Products,
+    exact: true
+  },
+  {
       path: "/items/:id",
       component: Detail,
-      exact: true
-    },
-    {
-      path: "/items",
-      component: Products,
       exact: true
     },
     {

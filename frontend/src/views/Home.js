@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{Fragment} from 'react'
 
 function Home() {
     return (
-        <div className="">
-        </div>
+        <Fragment>
+        </Fragment>
     )
 }
 

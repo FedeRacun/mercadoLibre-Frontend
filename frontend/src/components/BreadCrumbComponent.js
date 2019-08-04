@@ -1,14 +1,12 @@
 import React from 'react'
 
 const BreadCrumbComponents = ({categories})=>{
-
-
     return(
+    <div className="container breadcrumb">
         <ul>
-            <div className="container">
             <li>{categories}</li>
-            </div>
         </ul>
+    </div>
     )
 }
     export default BreadCrumbComponents

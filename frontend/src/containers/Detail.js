@@ -32,15 +32,19 @@ export class Detail extends Component {
         if(this.state.data){
             return (
                 <Fragment>
-                    <BreadCrumbContainer categories ={" "}/>
+                    <BreadCrumbContainer
+                        categories ={" "}
+                    />
+
                     <DetailComponent
                         data={this.state.data}
-                        />
-
+                    />
                 </Fragment>
             )
         }
-        return <h1>cargando...</h1>
+        return <div className="container items">
+                    <p>Cargando...</p>
+                </div>
     }
 }
 

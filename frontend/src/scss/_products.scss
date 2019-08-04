@@ -9,7 +9,60 @@ li {
   display: inline;
   text-decoration: none;
 }
+
 a {
   color: inherit !important;
   text-decoration: inherit !important;
+}
+
+hr {
+  border: solid 0.5px $backgroundColor;
+}
+
+.productBox {
+
+  display: flex;
+  padding-top: 15px;
+
+  img {
+    padding-right: 16px;
+  }
+
+  .productProps {
+    .tittleProduct {
+      font-size: 18px;
+      margin: 16px 0px;
+    }
+  }
+
+  .price {
+
+    img {
+      margin-left: 5px;
+    }
+
+    span {
+      margin: 16px 0px;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+
+    .decimal {
+      font-size: 12px;
+      font-weight: 600;
+      height: 20px;
+      left: -5px;
+      line-height: 1;
+      position: relative;
+      top: -8px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.breadcrumb {
+  padding: 10px 0px;
 }
