@@ -1,12 +1,13 @@
 import React, {Component,Fragment} from 'react'
 import ProductsListComponent from '../components/ProductsListComponent'
+import NotFound from '../views/NotFoundPag'
 
 export class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [],
-            categories: []
+            data: null,
+            categories: null
         };
     };
 
@@ -27,8 +28,12 @@ export class Products extends Component {
         });
     }
     render() {
-        return (
-            <Fragment>
+
+        if(this.state.data === ''){
+            return <NotFound />
+        }if(this.state.data !== null){
+            return (
+                <Fragment>
                 <ProductsListComponent
                 props = {this.props.props}
                 data = {this.state.data}
@@ -36,6 +41,8 @@ export class Products extends Component {
                 />
             </Fragment>
         )
+    }
+    return <p>Cargando...</p>
     }
 }
 

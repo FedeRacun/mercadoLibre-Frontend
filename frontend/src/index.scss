@@ -1,15 +1,22 @@
-$amarillo : #FFE600;        //FFE600;
-$negro: #333333;
-$gris: #999999;
-$gris_claro: #EEEEEE;
-$azul: #3483FA;
+// Utilidades
+@import './scss/normalize.scss';
+@import './scss/colors.scss';
+@import './scss/mixin.scss';
+
+// Elementos
+@import './scss/searchbar';
+@import './scss/products';
 
 html,body{
   height: 100%;
 }
+p{
+  margin: 0;
+  padding-top: 12px;
+}
 
 body{
-  background-color: $gris_claro !important;
+  background-color: $backgroundColor !important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,38 +27,10 @@ code{
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.searchBar{
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  padding: .5rem 1rem;
-  background-color: $amarillo;
-}
-.formSearch{
-  display: inline-flex;
-  width: 60%;
-  justify-content: center;
+.container{
+  @include container();
 }
 
-.breadCrumb{
-  background-color: $gris_claro;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: $gris_claro;
-}
-
-li {
-  display: inline;
-  text-decoration: none;
-}
-
-.piola{
-  background-color: white;
+.elements{
+  background-color: $containerColor;
 }

@@ -1,0 +1,27 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: 599px) {
+        max-width: 100%;
+    }
+    @media (min-width: 600px) {
+        max-width: 100%;
+    }
+    @media (min-width: 900px) {
+        max-width: 800px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 62%;
+    }
+}
+
+

@@ -3,26 +3,24 @@ import Product from './ProductComponent';
 import BreadCrumbContainer from '../containers/BreadCrumb';
 
 
-const ProductsListComponents = ({data,props,categories}) =>{
+const ProductsListComponents = ({data,categories}) =>{
 
 
-    const onRedirect = (id) =>{
-        props.history.push(`/items/${id}`)
-    }
-    
+
     return(
         <Fragment>
 
             <BreadCrumbContainer
             categories={categories}/>
-        
+
+        <div className="container elements">
             {data.map((datos)=>(
                 <Product
                 key={datos.id}
                 datos={datos}
-                onRedirect={onRedirect}
                 />
                 ))}
+        </div>
 
 
         </Fragment>

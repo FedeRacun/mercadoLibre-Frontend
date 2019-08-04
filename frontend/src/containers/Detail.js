@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react'
 import DetailComponent from '../components/DetailComponent'
+import BreadCrumbContainer from '../containers/BreadCrumb';
 
 export class Detail extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
             data : null,
-             
+
         }
     }
 
@@ -27,13 +27,13 @@ export class Detail extends Component {
 
 
     }
-    
+
     render() {
-    
         if(this.state.data){
             return (
                 <Fragment>
-                    <DetailComponent 
+                    <BreadCrumbContainer categories ={" "}/>
+                    <DetailComponent
                         data={this.state.data}
                         />
 

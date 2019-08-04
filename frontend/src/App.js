@@ -15,7 +15,7 @@ export class App extends Component {
     return (
       <Fragment>
         <Header/>
-          <div className="container piola">
+          <div className="bodyContainer">
             <Switch>
               {routes.map((route, i) => <Route key={i} {...route} />)}
             </Switch>

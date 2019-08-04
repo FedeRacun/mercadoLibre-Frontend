@@ -1,0 +1,39 @@
+.searchBar{
+    @include flexCenter();
+    background-color: $primaryColor;
+    position: relative;
+    flex-flow: row wrap;
+    flex-direction: row;
+    padding: 8px 16px;
+}
+
+.formSearch{
+    display: inline-flex;
+    width: 60%;
+    justify-content: center;
+  }
+
+.inputSearch{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: $textColor;
+    background-color:$containerColor;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.buttonSeach{
+    background-color: $backgroundColor;
+    border: 0px;
+    padding: 0px 19px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logMeli{
+    margin-right: 30px;
+}

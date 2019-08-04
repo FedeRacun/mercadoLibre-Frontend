@@ -1,32 +1,18 @@
 import React,{Fragment} from 'react'
 
 const ProductComponent = (datos) => {
-    const product = datos.datos;
-    const {id,title,price,picture} = product
+
+    const {id,title,price,picture} = datos.datos
 
 
     return (
         <Fragment>
-
+            <a href={`/items/${id}`}>
             <p>{title}</p>
-
-
-            <div className="row">
-
-                <img src={picture} alt={id} width="128" height="128"></img>
-
-                <p>{price.amount}</p><small className="ml-1">{price.decimals}</small>
-
-                <button
-                    className="btn btn-success m-auto"
-                    onClick={()=>datos.onRedirect(id)}
-                    >Comprar
-                </button>
-
-            </div>
-
+            </a>
+                <img src={picture} alt={id} width="180" height="180"></img>
+                <p>{price.amount}</p><small>{price.decimals}</small>
             <hr/>
-
         </Fragment>
     )
 }
