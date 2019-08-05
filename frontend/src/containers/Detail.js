@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import DetailComponent from '../components/DetailComponent'
 import BreadCrumbContainer from '../containers/BreadCrumb';
+import LoadingDetail from '../views/LoadingDetail';
 
 export class Detail extends Component {
     constructor(props) {
@@ -42,9 +43,7 @@ export class Detail extends Component {
                 </Fragment>
             )
         }
-        return <div className="container items">
-                    <p>Cargando...</p>
-                </div>
+        return <LoadingDetail />
     }
 }
 

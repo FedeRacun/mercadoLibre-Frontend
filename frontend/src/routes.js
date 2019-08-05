@@ -3,6 +3,7 @@ import Products from './views/Products';
 import Detail from './views/Detail';
 import NotFoundPage from './views/NotFoundPag';
 
+//creo un array de rutas para recorrer con un map por si despues necesito agregar mas
 const routes = [
 
   {

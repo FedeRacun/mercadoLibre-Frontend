@@ -6,6 +6,7 @@ import App from './App';
 import './index.scss';
 
 render(
+    //Aplico el Router sobre mi app para poder acceder a las propiedades de history en todas las vistas
     <Router>
 
     <Fragment>
