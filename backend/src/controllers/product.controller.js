@@ -19,7 +19,7 @@ productCtrl.getProduct =
                 productModel(data,detail)
             )
         } catch (error) {
-            console.log(error);
+            console.log('Ocurrio un error: ',error);
         }
 
 

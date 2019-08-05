@@ -1,4 +1,3 @@
-console.log('Cargo: search.controller.js');
 const fetch = require('node-fetch');
 const searchModel = require('../models/search.model')
 //  creo un objeto al que le voy a cargar las distintas propiedades
