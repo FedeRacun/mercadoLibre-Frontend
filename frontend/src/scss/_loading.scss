@@ -1,5 +1,8 @@
 //  Items Loading
 .loadingBox{
+    .productBox{
+        @include parpadea();
+    }
     margin-top: 40px;
 .imgBox{
     height: 180px;
@@ -36,6 +39,7 @@ hr {
 .loadingDetail{
     margin-top: 40px;
     .productBox{
+        @include parpadea();
 
         .productProps{
             margin-top: 25px;

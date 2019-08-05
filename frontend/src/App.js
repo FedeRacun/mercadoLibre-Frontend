@@ -11,8 +11,8 @@ export class App extends Component {
 };
 
   render() {
-    // El searchbar es independiente de las vistas asi puedo mostrarlo todo el tiempo, pero necesito
-    //aplicarle el withRouter para poder
+    // El searchbar es independiente de las vistas pero necesito
+    //aplicarle el withRouter para poder redireccionar a partir de los inputs
     const Header = withRouter(SearchBar)
 
     //Siempre se va a mostrar el Searchbar y por debajo se van a renderizar las rutas
