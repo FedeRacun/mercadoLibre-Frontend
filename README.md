@@ -70,8 +70,7 @@ En cuanto a estructura contamos con las carpetas:
 * Containers y Components: en Containers almacenamos componentes que solo trabajaran la parte "logica" del mismo y luego llamara a otros componentes de la carpeta components que solo mostraran la interfaz HTML
 
 ## Pendiente
-* Implementar server side rendering
-* Hacer script para facilitar la ejecucion
+* Implementar server side rendering (SEO)
+* Un unico script de ejecucion
 * Test Unitarios
 * Tests Funcionales
-* SEO optimizations
